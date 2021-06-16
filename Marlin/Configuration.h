@@ -77,7 +77,7 @@
 
 //Stepper09Deg // 0.9 degree per step motor on the extruder - doubles ESteps
 
- //#define MicroswissDirectDrive
+ #define MicroswissDirectDrive
  //#define DirectDrive // Any direct drive extruder, reduces filament change lengths
 
 /*
@@ -3902,3 +3902,8 @@
 
 // Edit servo angles with M281 and save to EEPROM with M500
 //#define EDITABLE_SERVO_ANGLES
+
+// Custom overrides
+#define NOZZLE_TO_PROBE_OFFSET { 48, 7, 0 }
+#define PROBING_MARGIN 15
+#define EStepsmm 136.8
